@@ -25,18 +25,6 @@
 
 ---
 
-<div align="center">
-
-## 📸 Preview
-
-| 📱 Mobile Dashboard | ☰ Side Navigation | 🔗 Add Link | 🖥️ Web Dashboard |
-|:---:|:---:|:---:|:---:|
-| ![Dashboard Mobile](./src/assets/image/DASHBOARD.png) | ![Side Nav](./src/assets/image/SIDE_NAVIGATION.png) | ![Add Link](./src/assets/image/ADD_LINK.png) | ![Dashboard Web](./src/assets/image/DASHBOARD_WEB.png) |
-
-</div>
-
----
-
 ## 🌟 Overview
 
 **Z·G Dashboard** is a social media order management platform where users can track and manage service orders such as **Likes**, **Follows**, **Messages**, and more — across multiple social media platforms.
@@ -75,14 +63,11 @@ zog-app/
 │   │
 │   ├── 📁 components/
 │   │   ├── Navbar.jsx              ← Responsive top navigation bar
-│   │   ├── SideNavigation.jsx      ← Animated slide drawer
+│   │   ├── AddLinkPage.jsx         ← Standalone Add Link page (mobile route)
 │   │   ├── Sidebar.jsx             ← Desktop left panel — Pay card + menu
 │   │   ├── Header.jsx              ← Icon tab bar — Like, Follow, Level, etc.
 │   │   ├── OrderDashboard.jsx      ← Order filter tabs + list view
 │   │   └── OrderList.jsx           ← Desktop right panel — Add Link
-│   │
-│   ├── 📁 pages/
-│   │   └── AddLinkPage.jsx         ← Standalone Add Link page (mobile route)
 │   │
 │   ├── App.jsx                     ← Router + main layout
 │   ├── main.jsx
@@ -135,31 +120,6 @@ npm run dev
 | [React Router DOM](https://reactrouter.com/) | `v7` | Client-side page routing |
 | [Lucide React](https://lucide.dev/) | `latest` | Beautiful SVG icon library |
 
----
-
-## 📱 Responsive Behavior
-
-```
-┌─────────────────────────────────────────────────────────┐
-│                    MOBILE  (< 768px)                    │
-│  ┌──────────────────────────────────────────────────┐   │
-│  │  ☰ Hamburger  │  Z·G Logo  │  🔔 Avatar          │   │
-│  └──────────────────────────────────────────────────┘   │
-│  │  Order List (full width)                         │   │
-│  │  ➕ FAB Button → navigates to /add-link          │   │
-└─────────────────────────────────────────────────────────┘
-
-┌─────────────────────────────────────────────────────────┐
-│                   DESKTOP  (≥ 768px)                    │
-│  ┌──────────────────────────────────────────────────┐   │
-│  │  Logo + Search  │  About Help Support  │ Avatar  │   │
-│  └──────────────────────────────────────────────────┘   │
-│  ┌──────────┐  ┌──────────────────┐  ┌─────────────┐   │
-│  │ Sidebar  │  │  Order Dashboard │  │  Add Link   │   │
-│  │  (left)  │  │    (center)      │  │   (right)   │   │
-│  └──────────┘  └──────────────────┘  └─────────────┘   │
-└─────────────────────────────────────────────────────────┘
-```
 
 ---
 
