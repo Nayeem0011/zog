@@ -57,6 +57,7 @@ zog-app/
 │
 ├── 📁 src/
 │   ├── 📁 assets/
+│   │   └── 📁 font/
 │   │   └── 📁 image/
 │   │       ├── navbar_logo.png
 │   │       └── navbar_profile.png
@@ -94,10 +95,10 @@ Make sure you have the following installed:
 
 ```bash
 # Step 1 — Clone the repository
-git clone https://github.com/Nayeem0011/zog-app.git
+git clone https://github.com/Nayeem0011/zog.git
 
 # Step 2 — Move into the project directory
-cd zog-app
+cd zog
 
 # Step 3 — Install all dependencies
 npm install
